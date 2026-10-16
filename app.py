@@ -63,7 +63,7 @@ Interpretation rules:
 - A lot may have multiple weight entries. Return all entries for that lot.
 """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=[
             types.Part.from_bytes(data=image_bytes, mime_type=mime_type),
             prompt,
